@@ -9,24 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
   <body>
-    <!-- Envelope Screen -->
-    <div id="envelope-container">
-      <img src="envelope.png" alt="Envelope" id="envelope" />
-      <p>♡ Letter for You ♡</p>
+    <div id="envelope-container" aria-label="Abrir carta">
+      <img src="envelope.png" alt="Sobre" id="envelope" />
+      <p class="open-text">♡ Haz clic para abrir tu carta ♡</p>
     </div>
 
-    <!-- Letter Screen -->
-    <div id="letter-container">
+   <section id="letter-container">
       <div class="letter-window">
         <h1 id="letter-title">Will you be my Valentine?</h1>
 
-        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+        <img src="cat_heart.gif" class="cat" id="letter-cat" alt="Gatito" />
 
         <div class="buttons" id="letter-buttons">
           <img src="yes.png" class="btn yes-btn" alt="Yes" />
@@ -36,11 +33,53 @@
           </div>
         </div>
 
-        <p id="final-text" class="final-text" style="display: none">
-          <strong>Valentine Date:</strong> You & me. My favorite person, I love u 🫶
+        <p id="mini-final-text" class="mini-final-text" style="display: none">
+          <strong>Valentine Date:</strong> You &amp; me. My favorite person, I love u 🫶
         </p>
-      </div>
-    </div>
+        
+      <button id="open-final-letter" class="open-final-letter" style="display: none">
+          Último click para abrir nuestra carta 💌
+        </button>
+        </section>
+
+    <section id="final-letter-container" style="display: none">
+      <article class="final-letter-card">
+        <h2>Para ti, mi amor 💕</h2>
+
+        <div class="final-text">
+          <p>
+            Para San Valentín estaba pensando que podríamos tener una cita especial solo para nosotros.
+            Jugar a Roblox, ver algo, reírnos, charlar… lo que nos apetezca.
+          </p>
+          <p>
+            Ya tengo películas, series y juegos listos, jiji. En cuanto al tiempo, me viene bien cuando tú
+            puedas 🫶
+          </p>
+          <p>
+            Lo que de verdad me importa es pasar tiempo contigo y sentirme cerca de ti, ya sabes, aunque de
+            momento sea a través de una pantalla. Sé que no es lo mismo que tenerte delante, poder abrazarte
+            o mirarte a los ojos, pero aun así contigo todo se siente especial.
+          </p>
+          <p>
+            Me gusta cómo me haces sentir incluso en los momentos más simples, como cuando estamos hablando de
+            cualquier cosa o riéndonos “por nada”… aunque en realidad no es por nada, porque si no, no
+            estaríamos riendo, jaja.
+          </p>
+          <p>
+            No necesito nada exagerado ni perfecto. Solo te quiero a ti, tu tiempo y esas pequeñas cosas que
+            hacen que me sienta conectado contigo. Para mí, eso ya es un San Valentín precioso.
+          </p>
+          <p>
+            Así que, si te apetece, hacemos de ese día algo nuestro, a nuestra manera. Con calma, sin prisas,
+            siendo nosotros… y eso, jiji 💕
+          </p>
+        </div>
+
+        <p class="te-amo">Te amo 💖</p>
+        <p class="initial-hearts">💗 J + R 💗</p>
+      </article>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
